@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import logo from '/mtt-icon.svg'
+import logo from '../assets/mtt-logo.svg'
 
 // Styled components for the Navbar
 const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 4.4rem 7.6rem;
 `;
 
 const Logo = styled.img`
-  max-height: 50px;
+  height: 3.6rem;
 `;
 
 const NavLinks = styled.div`
@@ -22,12 +22,17 @@ const NavLinks = styled.div`
 `;
 
 const NavLink = styled.a`
-  text-decoration: none;
-  color: #242424;
-  text-transform: uppercase;
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
 
   &:hover {
-    color: #838383;
+    color: rgba(29, 29, 29, 0.4);
     text-decoration: none;
   }
 `;
@@ -35,11 +40,11 @@ const NavLink = styled.a`
 // Navbar component
 const Navbar = () => {
   return (
-    <NavbarContainer className="container">
+    <NavbarContainer>
         <Logo src={logo} alt="make things talk" />
         <NavLinks>
-            <NavLink href="/">Home</NavLink>
-            <NavLink href="/diy">DIY</NavLink>
+            <NavLink href="./">Home</NavLink>
+            <NavLink href="./diy">DIY</NavLink>
         </NavLinks>
     </NavbarContainer>
   );

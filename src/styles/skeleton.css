@@ -8,33 +8,12 @@
 */
 
 
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
-
 :root {
-  --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
-    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  --line-height: 1.5;
-  --font-weight: 400;
-  --font-size: 16px;
-  --text-color: #242424;
+  --font-family: "ff-scala-sans-pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary-font-family: "rubik", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --text-color: #1c1c1c;
+  --background-color: #f2f2f2;
 }
-
 
 
 /* Base Styles
@@ -48,9 +27,10 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "ff-scala-sans-pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; 
+  font-family: var(--font-family);
+  color: var(--text-color); 
   margin: 0;
+  background-color: var(--background-color);
 }
 
 
@@ -290,9 +270,6 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
-
-
-
 
 
 /**
