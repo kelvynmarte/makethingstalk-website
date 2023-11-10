@@ -2,16 +2,24 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 
+import ImageSection from "./components/ImageSection"
+import Navbar from "./components/Navbar"
+import productImage from './assets/product-03.jpg'
+
 function App() {
 
 
   return (
     <>
+      <Navbar></Navbar>
+      <ImageSection imageUrl={productImage} text="Digitale Geschichten erzählen mit RFID-Technologie – jenseits von Tablets, Terminals und Touchscreens."></ImageSection>
       <div className="container">
-          <div className="row">
-            <div className="one column">One</div>
-            <div className="eleven columns">Eleven</div>
-          </div>
+      <div className="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
 
 <h1>Heading</h1>
 <h2>Heading</h2>
