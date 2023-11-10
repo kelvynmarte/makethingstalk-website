@@ -1,13 +1,10 @@
 import styled from 'styled-components';
+import { Section } from './Section';
 
 // Styled component for the section
-const StyledSection = styled.section<{ $imageUrl: string }>`
+const StyledSection = styled(Section)<{ $imageUrl: string }>`
   position: relative;
-  height: 80vh;
   background: ${(props) => `url('${props.$imageUrl}')`} center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
 `;
 
