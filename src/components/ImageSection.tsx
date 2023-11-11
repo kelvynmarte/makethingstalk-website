@@ -25,13 +25,13 @@ interface ImageSectionProps {
 
 // Your React component
 const ImageSection: React.FC<ImageSectionProps> = ({ imageUrl, text }) => {
-  return (
-    <StyledSection $imageUrl={imageUrl}>
-      <TextOverlay className='container'>
-        <h1>{text}</h1>
-      </TextOverlay>
-    </StyledSection>
-  );
+	return (
+		<StyledSection $imageUrl={imageUrl}>
+			<TextOverlay className='container'>
+				<h1>{text}</h1>
+			</TextOverlay>
+		</StyledSection>
+	);
 };
 
 export default ImageSection;
