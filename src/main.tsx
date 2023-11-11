@@ -10,11 +10,11 @@ import Diy from './pages/Diy.tsx';
 
 const router = createBrowserRouter([
   {
-    path: "/makethingstalk-website/",
+    path: "/",
     element: <Home />,
   },
   {
-    path: "/makethingstalk-website/diy",
+    path: "/diy",
     element: <Diy />,
   },
 ]);
