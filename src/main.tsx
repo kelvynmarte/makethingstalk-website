@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import './styles/skeleton.css'
 import {
   createHashRouter,
-  Link,
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/Home.tsx';
