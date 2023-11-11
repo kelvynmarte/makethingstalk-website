@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import logo from '../assets/mtt-logo.svg'
+import { Link } from 'react-router-dom';
 
 // Styled components for the Navbar
 const NavbarContainer = styled.nav`
@@ -21,7 +22,7 @@ const NavLinks = styled.div`
   /* margin-left: auto; */
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
     font-family: var(--secondary-font-family);
     font-weight: 400;
     font-style: normal;
@@ -43,8 +44,8 @@ const Navbar = () => {
     <NavbarContainer>
         <Logo src={logo} alt="make things talk" />
         <NavLinks>
-            <NavLink href="./">Home</NavLink>
-            <NavLink href="./diy">DIY</NavLink>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/diy">DIY</NavLink>
         </NavLinks>
     </NavbarContainer>
   );

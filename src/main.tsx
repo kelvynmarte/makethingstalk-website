@@ -2,20 +2,21 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './styles/skeleton.css'
 import {
-  createBrowserRouter,
+  createHashRouter,
+  Link,
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/Home.tsx';
 import Diy from './pages/Diy.tsx';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Home />
   },
   {
     path: "/diy",
-    element: <Diy />,
+    element: <Diy />
   },
 ]);
 
