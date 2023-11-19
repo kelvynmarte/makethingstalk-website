@@ -29,7 +29,7 @@ function Home() {
 					<h2>Die <b>make things talk</b> Box ist Plug&Play durch und durch: Einfach einen Bildschirm oder Lautsprecher anschließen und es kann losgehen.</h2>
 				</Section>
 				<Section $contentWidth="narrow-content">
-					<IFrame src="https://player.vimeo.com/video/437458048?app_id=122963&amp;wmode=opaque" width="720" height="405" allow="autoplay; fullscreen" title="make things talk – Administration" id="yui_3_17_2_1_1700397905857_454"></IFrame>
+					<IFrame src="https://player.vimeo.com/video/437458048?app_id=122963&amp;wmode=opaque" allow="autoplay; fullscreen" title="make things talk – Administration" id="yui_3_17_2_1_1700397905857_454"></IFrame>
 				</Section>
 				<Section $contentWidth="narrow-content">
 					<p>Das Verlinken von Objekten und Videos geht kinderleicht. Einfach über den eigenen Computer mit dem <b>make things talk</b> WIFI-Hotspot verbinden, Browser öffnen, Tag auf die Box legen und per Drag&Drop ein Video- oder Audio-File zuweisen.</p>
