@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 // Styled components for the Navbar
 const NavbarContainer = styled.nav`
+  grid-column: full-width;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -44,7 +45,7 @@ const NavLink = styled(Link)`
 // Navbar component
 const Navbar = () => {
 	return (
-		<NavbarContainer>
+		<NavbarContainer className='full-width'>
 			<Logo src={logo} alt="make things talk" />
 			<NavLinks>
 				<NavLink to="/">Home</NavLink>

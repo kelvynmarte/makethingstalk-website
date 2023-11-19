@@ -23,7 +23,9 @@ const router = createHashRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-	<React.StrictMode>
-		<RouterProvider router={router} />
-	</React.StrictMode>,
+	<main className='content-grid'>
+		<React.StrictMode>
+			<RouterProvider router={router} />
+		</React.StrictMode>
+	</main>
 );

@@ -3,13 +3,16 @@ import { Section } from './Section';
 
 // Styled component for the section
 const StyledSection = styled(Section)<{ $imageUrl: string }>`
-  position: relative;
+  grid-column: full-width;
+  display: grid;
+  grid-template-columns: inherit;
   background: ${(props) => `url('${props.$imageUrl}')`} center/cover no-repeat;
   color: white;
 `;
 
 // Styled component for the text overlay
 const TextOverlay = styled.div`
+    grid-column: breakout;
     display: flex;
 
     h1 {
@@ -26,7 +29,7 @@ interface ImageSectionProps {
 // Your React component
 const ImageSection: React.FC<ImageSectionProps> = ({ imageUrl, text }) => {
 	return (
-		<StyledSection $imageUrl={imageUrl}>
+		<StyledSection $imageUrl={imageUrl} className='full-width'>
 			<TextOverlay className='container'>
 				<h1>{text}</h1>
 			</TextOverlay>

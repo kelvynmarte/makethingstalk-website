@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  position: relative;
-  height: 80vh;
+  grid-column: content;
+  min-height: 80vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;

@@ -9,10 +9,10 @@ function Home() {
 		<>
 			<Navbar/>
 			<ImageSection imageUrl={productImage} text="Digitale Geschichten erzählen mit RFID-Technologie – jenseits von Tablets, Terminals und Touchscreens."></ImageSection>
-			<Section className="container">
+			<Section>
 				<h1>Platziert man ein physisches Objekt auf der make things talk Box, startet ein damit verknüpftes Video oder eine Tonaufnahme.</h1>
 			</Section>
-			<div className="container">
+			<Section>
 				<div className="grid">
 					<div>1</div>
 					<div>2</div>
@@ -32,7 +32,7 @@ function Home() {
 				<em>Italicized</em>
 				<a>Colored</a>
 				<u>Underlined</u>
-			</div>
+			</Section>
 		</>
 	);
 }
