@@ -77,7 +77,7 @@ a:hover {
 * Container
 */
 .content-grid {
-  --padding-inline: 2.4rem;
+  --padding-inline: 1.5rem;
   --narrow-content-inline: 0.0rem;
   --content-max-width: 800px;
   --breakout-max-width: 1600px;
@@ -117,7 +117,7 @@ a:hover {
 /* Larger than mobile */
 @media (min-width: 400px) {
   .content-grid {
-    --padding-inline: 3.6rem;
+    --padding-inline: 2rem;
     --narrow-content-inline: calc(var(--padding-inline) * 2);
   }
 }
@@ -125,21 +125,21 @@ a:hover {
 /* Larger than tablet */
 @media (min-width: 750px) {
   .content-grid {
-    --padding-inline: 4.8rem;
+    --padding-inline: 3rem;
   }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .content-grid {
-    --padding-inline: 6.4rem;
+    --padding-inline: 4rem;
   }
 }
 
   /* Larger than Desktop HD */
 @media (min-width: 1200px) {
   .content-grid {
-    --padding-inline: 8rem;
+    --padding-inline: 5rem;
   }
 }
 
