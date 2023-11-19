@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 // Styled components for the Navbar
 const NavbarContainer = styled.nav`
-  grid-column: full-width;
+  grid-column: breakout;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 3.2rem 4.8rem;
+  padding: 3.2rem 0;
   gap: 4.8rem;
 `;
 
@@ -33,7 +33,7 @@ const NavLink = styled(Link)`
     text-decoration: none;
     color: var(--text-color);
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
 
   &:hover {

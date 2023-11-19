@@ -16,7 +16,7 @@ const TextOverlay = styled.div`
     display: flex;
 
     h1 {
-        width: 50%;
+        width: max(50%, 400px);
     }
 `;
 
