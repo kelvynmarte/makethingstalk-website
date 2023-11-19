@@ -9,13 +9,13 @@ const NavbarContainer = styled.nav`
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 3.2rem 0;
-  gap: 4.8rem;
+  padding: 2rem 0;
+  gap: 3rem;
 `;
 
 const Logo = styled.img`
-  height: 3.6rem;
-  margin-right: 4.8rem;
+  height: 2.25rem;
+  margin-right: 3rem;
 `;
 
 const NavLinks = styled.div`
@@ -34,7 +34,7 @@ const NavLink = styled(Link)`
     text-decoration: none;
     color: var(--text-color);
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1rem;
     transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
 
   &:hover {
