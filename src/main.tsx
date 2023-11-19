@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'sanitize.css';
-import './styles/skeleton.css';
+import './styles/main.css';
 
 import {
 	createHashRouter,

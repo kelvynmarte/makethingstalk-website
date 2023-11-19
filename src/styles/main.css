@@ -1,20 +1,9 @@
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
-
-
 :root {
   --font-family: "ff-scala-sans-pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --secondary-font-family: "rubik", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --text-color: #1c1c1c;
   --background-color: #f2f2f2;
 }
-
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -56,9 +45,6 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h6 { font-size: 1.5rem; }
 }
 
-p {
-  margin-top: 0; }
-
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -68,72 +54,6 @@ a:hover {
   color: var(--text-color);
   text-decoration: underline;
 }
-
-
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
-  list-style: circle inside; }
-ol {
-  list-style: decimal inside; }
-ol, ul {
-  padding-left: 0;
-  margin-top: 0; }
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
-li {
-  margin-bottom: 1rem; }
-
-
-
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-th,
-td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
-th:first-child,
-td:first-child {
-  padding-left: 0; }
-th:last-child,
-td:last-child {
-  padding-right: 0; }
-
-
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
-  margin-bottom: 1rem; }
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1.5rem; }
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ul,
-ol,
-form {
-  margin-bottom: 2.5rem; }
-
-
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid #E1E1E1; }
 
 
 /**
@@ -171,21 +91,14 @@ hr {
   }
 }
 
-/**
- * Section
- * Responsive spacings for section
- */
-section {
-  margin-bottom: var(--block-spacing-vertical);
-}
 
 /**
 * Grid
 * Minimal grid system with auto-layout columns
 */
 .grid {
-  grid-column-gap: var(--grid-spacing-horizontal);
-  grid-row-gap: var(--grid-spacing-vertical);
+  grid-column-gap: var(--grid-spacing-horizontal, 1.6rem);
+  grid-row-gap: var(--grid-spacing-vertical, 1.6rem);
   display: grid;
   grid-template-columns: 1fr;
   margin: 0;
@@ -199,19 +112,6 @@ section {
   min-width: 0;
 }
 
-/**
- * Horizontal scroller (<figure>)
- */
-figure {
-  display: block;
-  margin: 0;
-  padding: 0;
-  overflow-x: auto;
-}
-figure figcaption {
-  padding: calc(var(--spacing) * 0.5) 0;
-  color: var(--muted-color);
-}
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
