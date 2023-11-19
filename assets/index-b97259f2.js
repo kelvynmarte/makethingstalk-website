@@ -86,15 +86,15 @@ Error generating stack: `+i.message+`
     display: flex;
 
     h1 {
-        width: 50%;
+        width: max(50%, 400px);
     }
 `,ah=({imageUrl:e,text:t})=>B.jsx(E0,{$imageUrl:e,className:"full-width",children:B.jsx(C0,{className:"container",children:B.jsx("h1",{children:t})})}),P0="/assets/mtt-logo-902e91d4.svg",R0=Sn.nav`
-  grid-column: full-width;
+  grid-column: breakout;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 3.2rem 4.8rem;
+  padding: 3.2rem 0;
   gap: 4.8rem;
 `,_0=Sn.img`
   height: 3.6rem;
@@ -112,7 +112,7 @@ Error generating stack: `+i.message+`
     text-decoration: none;
     color: var(--text-color);
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
 
   &:hover {
