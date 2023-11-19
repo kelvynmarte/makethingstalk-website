@@ -6,8 +6,10 @@ import { Link } from 'react-router-dom';
 const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 4.4rem 7.6rem;
+  padding: 3.2rem 4.8rem;
+  gap: 4.8rem;
 `;
 
 const Logo = styled.img`
@@ -16,7 +18,8 @@ const Logo = styled.img`
 
 const NavLinks = styled.div`
   display: flex;
-  gap: 1.6rem;
+  flex-wrap: wrap;
+  gap: 2.4rem;
   justify-content: flex-end;
 
   /* margin-left: auto; */
@@ -45,7 +48,7 @@ const Navbar = () => {
 			<Logo src={logo} alt="make things talk" />
 			<NavLinks>
 				<NavLink to="/">Home</NavLink>
-				<NavLink to="/diy">DIY</NavLink>
+				<NavLink to="/diy">Diy</NavLink>
 			</NavLinks>
 		</NavbarContainer>
 	);
