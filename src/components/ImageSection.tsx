@@ -5,7 +5,7 @@ const StyledSection = styled.section<{ $imageUrl?: string, $contentType?: string
   grid-column: ${(props) => props.$contentType ? props.$contentType : "content" };
   display: grid;
   align-items: center;
-  min-height: 70svh;
+  min-height: max(70svh, 30svw);
   grid-template-columns: inherit;
   ${(props) => props.$imageUrl ? `background: url('${props.$imageUrl}') center/cover no-repeat;` : ``} 
   color: white;
@@ -23,7 +23,7 @@ const TextOverlay = styled.div`
 // Props for the ImageSection component
 interface ImageSectionProps {
   imageUrl: string;
-  text: string;
+  text?: string;
 }
 
 // Your React component

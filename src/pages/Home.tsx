@@ -1,7 +1,9 @@
 import ImageSection from "../components/ImageSection";
 import Navbar from "../components/Navbar";
 import productImage from '../assets/home-cover.jpg';
+import configureImage from '../assets/home/configure.jpeg';
 import { Section } from "../components/Section";
+import { ContentSectionWrapper } from "../components/ContentSectionWrapper";
 function Home() {
 
 
@@ -9,30 +11,36 @@ function Home() {
 		<>
 			<Navbar/>
 			<ImageSection imageUrl={productImage} text="Digitale Geschichten erzählen mit RFID-Technologie – jenseits von Tablets, Terminals und Touchscreens."></ImageSection>
-			<Section className="full-width">
-				<h1>Platziert man ein physisches Objekt auf der make things talk Box, startet ein damit verknüpftes Video oder eine Tonaufnahme.</h1>
-			</Section>
-			<Section>
-				<div className="grid">
-					<div>1</div>
-					<div>2</div>
-					<div>3</div>
-					<div>4</div>
-				</div>
-				<h1>Hallo Georg!</h1>
-				<h2>Heading</h2>
-				<h3>Heading</h3>
-				<h4>Heading</h4>
-				<h5>Heading</h5>
-				<h6>Heading</h6>
-
-				<p>The base type is 15px over 1.6 line height (24px)</p>
-
-				<strong>Bolded</strong>
-				<em>Italicized</em>
-				<a>Colored</a>
-				<u>Underlined</u>
-			</Section>
+			<ContentSectionWrapper>
+				<Section $contentWidth="narrow-content">
+					<h2>Platziert man ein physisches Objekt auf der <b>make things talk</b> Box, startet ein damit verknüpftes Video oder eine Tonaufnahme.</h2>
+				</Section>
+				<Section>
+					{/* video */}
+					<iframe src="https://player.vimeo.com/video/437442074?app_id=122963&amp;wmode=opaque" width="720" height="405" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="make things talk – Showcases" id="yui_3_17_2_1_1700397905857_414"></iframe>
+				</Section>
+				<Section $contentWidth="narrow-content">
+					<p><b>make things talk</b> eignet sich hervorragend um in Museen und Ausstellungen digitale Inhalte auf leicht zugängliche Art und Weise zu vermitteln.</p>
+					<p>Statt der Auseinandersetzung mit einem Interface stellt <b>make things talk</b> die Auseinandersetzung mit physischen Objekten in den Vordergrund.</p>
+				</Section>
+				<ImageSection imageUrl={configureImage}></ImageSection>
+				<Section $contentWidth="content">
+					<h2>Die <b>make things talk</b> Box ist Plug&Play durch und durch: Einfach einen Bildschirm oder Lautsprecher anschließen und es kann losgehen.</h2>
+				</Section>
+				<Section $contentWidth="narrow-content">
+					<iframe src="https://player.vimeo.com/video/437458048?app_id=122963&amp;wmode=opaque" width="720" height="405" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="make things talk – Administration" id="yui_3_17_2_1_1700397905857_454"></iframe>
+				</Section>
+				<Section $contentWidth="narrow-content">
+					<p>Das Verlinken von Objekten und Videos geht kinderleicht. Einfach über den eigenen Computer mit dem <b>make things talk</b> WIFI-Hotspot verbinden, Browser öffnen, Tag auf die Box legen und per Drag&Drop ein Video- oder Audio-File zuweisen.</p>
+					<p>Mit <b>make things talk</b> lassen sich Medien-Stationen im Handumdrehen selbst erstellen. Ganz ohne technische Vorkenntnisse.</p>
+				</Section>
+				<Section $contentWidth="content">
+					<h2>Du bist daran interessiert eine <b>make things talk Box</b> im Rahmen einer Ausstellung einzusetzen?</h2>
+				</Section>
+				<Section $contentWidth="narrow-content">
+					<p>Wir würden uns freuen, mit dir ein wenig über Ideen und Möglichkeiten zu plaudern. Melde dich bei uns!<br />  <a href="mailto:info@makethingstalk.io">info@makethingstalk.io﻿</a></p>
+				</Section>
+			</ContentSectionWrapper>
 		</>
 	);
 }

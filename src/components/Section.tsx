@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
-  grid-column: content;
-  min-height: 80vh;
+export const Section = styled.section<{ $contentWidth?: string }>`
+  grid-column: ${(props) => props.$contentWidth ? props.$contentWidth : "content" };
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 `;
