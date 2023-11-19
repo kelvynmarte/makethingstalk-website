@@ -15,6 +15,7 @@ const NavbarContainer = styled.nav`
 
 const Logo = styled.img`
   height: 3.6rem;
+  margin-right: 4.8rem;
 `;
 
 const NavLinks = styled.div`
