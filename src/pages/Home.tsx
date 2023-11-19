@@ -4,6 +4,7 @@ import productImage from '../assets/home-cover.jpg';
 import configureImage from '../assets/home/configure.jpeg';
 import { Section } from "../components/Section";
 import { ContentSectionWrapper } from "../components/ContentSectionWrapper";
+import { IFrame } from "../components/IFrame";
 function Home() {
 
 
@@ -17,7 +18,7 @@ function Home() {
 				</Section>
 				<Section>
 					{/* video */}
-					<iframe src="https://player.vimeo.com/video/437442074?app_id=122963&amp;wmode=opaque" width="720" height="405" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="make things talk – Showcases" id="yui_3_17_2_1_1700397905857_414"></iframe>
+					<IFrame src="https://player.vimeo.com/video/437442074?app_id=122963&amp;wmode=opaque" allow="autoplay; fullscreen" title="make things talk – Showcases" id="yui_3_17_2_1_1700397905857_414"></IFrame>
 				</Section>
 				<Section $contentWidth="narrow-content">
 					<p><b>make things talk</b> eignet sich hervorragend um in Museen und Ausstellungen digitale Inhalte auf leicht zugängliche Art und Weise zu vermitteln.</p>
@@ -28,7 +29,7 @@ function Home() {
 					<h2>Die <b>make things talk</b> Box ist Plug&Play durch und durch: Einfach einen Bildschirm oder Lautsprecher anschließen und es kann losgehen.</h2>
 				</Section>
 				<Section $contentWidth="narrow-content">
-					<iframe src="https://player.vimeo.com/video/437458048?app_id=122963&amp;wmode=opaque" width="720" height="405" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="make things talk – Administration" id="yui_3_17_2_1_1700397905857_454"></iframe>
+					<IFrame src="https://player.vimeo.com/video/437458048?app_id=122963&amp;wmode=opaque" width="720" height="405" allow="autoplay; fullscreen" title="make things talk – Administration" id="yui_3_17_2_1_1700397905857_454"></IFrame>
 				</Section>
 				<Section $contentWidth="narrow-content">
 					<p>Das Verlinken von Objekten und Videos geht kinderleicht. Einfach über den eigenen Computer mit dem <b>make things talk</b> WIFI-Hotspot verbinden, Browser öffnen, Tag auf die Box legen und per Drag&Drop ein Video- oder Audio-File zuweisen.</p>
