@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import logo from '../assets/mtt-logo.svg';
-import { Link } from 'react-router-dom';
+import { NavLink } from './NavLink';
 
 // Styled components for the Navbar
 const NavbarContainer = styled.nav`
@@ -25,22 +25,6 @@ const NavLinks = styled.div`
   justify-content: flex-end;
 
   /* margin-left: auto; */
-`;
-
-const NavLink = styled(Link)`
-    font-family: var(--secondary-font-family);
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    color: var(--text-color);
-    text-transform: uppercase;
-    font-size: 1rem;
-    transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
-
-  &:hover {
-    color: rgba(29, 29, 29, 0.4);
-    text-decoration: none;
-  }
 `;
 
 // Navbar component

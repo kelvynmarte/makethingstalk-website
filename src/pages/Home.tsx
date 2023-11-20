@@ -5,6 +5,7 @@ import configureImage from '../assets/home/configure.jpeg';
 import { Section } from "../components/Section";
 import { ContentSectionWrapper } from "../components/ContentSectionWrapper";
 import { IFrame } from "../components/IFrame";
+import Footer from "../components/Footer";
 function Home() {
 
 
@@ -39,9 +40,10 @@ function Home() {
 					<h2>Du bist daran interessiert eine <b>make things talk Box</b> im Rahmen einer Ausstellung einzusetzen?</h2>
 				</Section>
 				<Section $contentWidth="narrow-content">
-					<p>Wir würden uns freuen, mit dir ein wenig über Ideen und Möglichkeiten zu plaudern. Melde dich bei uns!<br />  <a href="mailto:info@makethingstalk.io">info@makethingstalk.io﻿</a></p>
+					<p>Wir würden uns freuen, mit dir ein wenig über Ideen und Möglichkeiten zu plaudern. Melde dich bei uns!<br />  <a href="mailto:info@makethingstalk.io">info@makethingstalk.io</a></p>
 				</Section>
 			</ContentSectionWrapper>
+			<Footer></Footer>
 		</>
 	);
 }
