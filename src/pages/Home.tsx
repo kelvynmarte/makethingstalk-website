@@ -15,7 +15,7 @@ function Home() {
 			<ImageSection imageUrl={productImage} text="Digitale Geschichten erzählen mit RFID-Technologie – jenseits von Tablets, Terminals und Touchscreens."></ImageSection>
 			<ContentSectionWrapper>
 				<Section $contentWidth="narrow-content">
-					<h2 className="margin-left-25">Platziert man ein physisches Objekt auf der <b>make things talk</b> Box, startet ein damit verknüpftes Video oder eine Tonaufnahme.</h2>
+					<h3 className="margin-left-25">Platziert man ein physisches Objekt auf der <b>make things talk</b> Box, startet ein damit verknüpftes Video oder eine Tonaufnahme.</h3>
 				</Section>
 				<Section>
 					{/* video */}
@@ -27,7 +27,7 @@ function Home() {
 				</Section>
 				<ImageSection imageUrl={configureImage}></ImageSection>
 				<Section $contentWidth="content">
-					<h2 className="margin-right-25">Die <b>make things talk</b> Box ist Plug&Play durch und durch: Einfach einen Bildschirm oder Lautsprecher anschließen und es kann losgehen.</h2>
+					<h3 className="margin-right-25">Die <b>make things talk</b> Box ist Plug&Play durch und durch: Einfach einen Bildschirm oder Lautsprecher anschließen und es kann losgehen.</h3>
 				</Section>
 				<Section $contentWidth="narrow-content">
 					<IFrame src="https://player.vimeo.com/video/437458048?app_id=122963&amp;wmode=opaque" allow="autoplay; fullscreen" title="make things talk – Administration" id="yui_3_17_2_1_1700397905857_454"></IFrame>
@@ -37,7 +37,7 @@ function Home() {
 					<p>Mit <b>make things talk</b> lassen sich Medien-Stationen im Handumdrehen selbst erstellen. Ganz ohne technische Vorkenntnisse.</p>
 				</Section>
 				<Section $contentWidth="content">
-					<h2 className="margin-right-25">Du bist daran interessiert eine <b>make things talk Box</b> im Rahmen einer Ausstellung einzusetzen?</h2>
+					<h3 className="margin-right-25">Du bist daran interessiert eine <b>make things talk Box</b> im Rahmen einer Ausstellung einzusetzen?</h3>
 				</Section>
 				<Section $contentWidth="narrow-content">
 					<p>Wir würden uns freuen, mit dir ein wenig über Ideen und Möglichkeiten zu plaudern. Melde dich bei uns!<br />  <a href="mailto:info@makethingstalk.io">info@makethingstalk.io</a></p>

@@ -15,7 +15,7 @@ const StyledSection = styled.section<{ $imageUrl?: string, $contentType?: string
 const TextOverlay = styled.div`
     grid-column: breakout;
     display: flex;
-    h1 {
+    h1, h2, h3 {
         width: max(50%, 400px);
     }
 `;
@@ -31,7 +31,7 @@ const ImageSection: React.FC<ImageSectionProps> = ({ imageUrl, text }) => {
 	return (
 		<StyledSection $imageUrl={imageUrl} $contentType="full-width">
 			<TextOverlay>
-				<h1>{text}</h1>
+				<h2>{text}</h2>
 			</TextOverlay>
 		</StyledSection>
 	);
