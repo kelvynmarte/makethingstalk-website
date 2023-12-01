@@ -6,8 +6,11 @@ import solderingImage from "../assets/diy/soldering.jpg";
 import wiringDiagramImage from "../assets/diy/wiring-diagram.png";
 import theBoxImage from "../assets/diy/the-box.jpeg";
 import sdCardImage from "../assets/diy/sd-card.jpeg";
+import uploadingImage from "../assets/diy/uploading.jpg";
 import { ContentSectionWrapper } from "../components/ContentSectionWrapper";
 import { Section } from "../components/Section";
+import { IFrame } from "../components/IFrame";
+import Footer from "../components/Footer";
 
 function Diy() {
 
@@ -45,8 +48,7 @@ function Diy() {
 					<ul data-rte-list="default">
 						<li>a <strong>display</strong> or <strong>speakers</strong> to connect to the Raspberry</li>
 					</ul>
-	
-  				The following tools are recommended:
+					The following tools are recommended:
 					<ul data-rte-list="default">
 						<li><strong>Soldering iron</strong> and <strong>solder</strong> to apply the connector on the RFID Reader RC522 </li>
 						<li><strong>Cutter knife</strong>, <strong>mat and ruler</strong> to cut the foam board</li>
@@ -117,7 +119,72 @@ function Diy() {
 
 
 				</Section>
+				<Section $contentWidth="breakout">
+					<h3 className="center"><b>Step 6:</b> Put everything together</h3>
+					<IFrame src="https://player.vimeo.com/video/411374160?app_id=122963&wmode=opaque" allow="autoplay; fullscreen" title="make things talk – Showcases" id="yui_3_17_2_1_1700397905857_414"></IFrame>
+
+				</Section>
+				<Section $contentWidth="narrow-content">
+					<div>
+						<p>For this step you need: the <strong>RaspberryPi </strong>in its default casing<strong> </strong>with the <strong>RC 522</strong> connected, the put together foam board <strong>casing</strong>, the <strong>Micro-SD-card</strong> with the <strong>make things talk</strong> <strong>image</strong> installed, the <strong>power supply</strong> for the Raspberry, a <strong>display</strong> to connect to your Raspberry plus and the <strong>Micro-HDMI cable</strong>. </p>
+						<ul>
+							<li><p>put the Micro-SD card into the Raspberry</p></li>
+							<li><p>put the Raspberry and the connected RC 522 sensor into the foam board casing</p></li>
+							<li><p>connect the display to the Raspberry</p></li>
+							<li><p>power both the Raspberry and the display</p></li>
+						</ul>
+						<p>As soon as the Raspberry is connected to power it automatically boots up. But be aware: It requires a couple of seconds until it is fully operational. </p>
+						<p>Congratulations! Your media station is now up and running. Now you are ready to add some awesome content.</p>
+					</div>
+
+
+				</Section>
+				<Section $contentWidth="breakout">
+					<h3 className="center"><b>Step 7:</b> Uploading Content</h3>
+					<img src={uploadingImage} alt="" width="100%"/>
+				</Section>
+				<Section $contentWidth="narrow-content">
+					<div>
+						<p>For this step you need: the finished <strong>make things talk</strong> <strong>box </strong>connected to a <strong>display</strong> up and running. Several <strong>RFID tags</strong>. A <strong>computer</strong> with WIFI and some <strong>mp4 video files </strong>you would like to upload to your box.</p>
+						<ul>
+							<li><p>on your computer go to the WIFI settings and connect to the WIFI with the name <strong>makethingstalk-WIFI</strong></p></li>
+							<li><p>open a <strong>web browser</strong> of your choice </p></li>
+							<li><p>type in <strong>makethingstalk.local</strong></p></li>
+						</ul>
+						<p>You now see the interface that lets you link media files with RFID tags. In order to do that just follow the instructions on the screen:</p>
+						<ul>
+							<li><p>place a <strong>RFID tag</strong> on the make things talk <strong>box</strong></p></li>
+							<li><p>click to open the <strong>select file dialog</strong> </p></li>
+							<li><p>select a <strong>mp4</strong> <strong>video</strong> of your liking</p></li>
+							<li><p>click <strong>ok</strong></p></li>
+							<li><p><strong>wait</strong> for the file to be uploaded (might take several seconds)</p></li>
+							<li><p><strong>done!</strong></p></li>
+						</ul>
+					</div>
+				</Section>
+				<Section $contentWidth="narrow-content">
+					<div>
+						<IFrame src="https://player.vimeo.com/video/419540190?app_id=122963&wmode=opaque" allow="autoplay; fullscreen" title="make things talk – Showcases" id="yui_3_17_2_1_1700397905857_414"></IFrame>
+						<p>Congratulations! You just successfully linked your first video. Now whenever you put the same RFID tag onto the box the linked video will be replayed. </p>
+						<hr />
+
+						<p>Now it is up to you! Research or create interesting content, stick RFID tags to objects of all kinds, link objects and digital content, build your own media stations!</p>
+						<p>If you made it through this tutorial, we would be more than happy to hear your <a href="mailto:hello@makethingstalk.io">feedback</a>. Just shoot us an email or maybe we could even have a little chat together? We would appreciate it very much!</p>
+						<p className="center">Thanks and happy hacking!</p>
+						<hr />
+						<p className="center">Your <b>make things talk</b> team</p>
+					</div>
+				</Section>
+				<Section $contentWidth="content">
+					<p>
+						<h3 className="margin-right-25">Du bist daran interessiert eine <b>make things talk</b> Box im Rahmen einer Ausstellung einzusetzen?</h3>
+					</p>
+				</Section>
+				<Section $contentWidth="narrow-content">
+					<p>Wir würden uns freuen, mit dir ein wenig über Ideen und Möglichkeiten zu plaudern. Melde dich bei uns! &nbsp;<a href="info@makethingstalk.io﻿"><strong>info@makethingstalk.io﻿</strong></a></p>
+				</Section>
 			</ContentSectionWrapper>
+			<Footer></Footer>
 		</>
 	);
 }
