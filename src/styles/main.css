@@ -66,6 +66,11 @@ h5 { font-size: var(--font-size-1); line-height: 1.4em;  letter-spacing: 0rem; }
   margin-right: max(min(25%, calc((100vw - 550px) * 0.25)), 0);
 }
 
+.center {
+  width: 100%;
+  text-align: center;
+}
+
 
 b {
   font-weight: 600;

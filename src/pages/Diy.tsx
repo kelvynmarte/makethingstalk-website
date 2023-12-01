@@ -23,7 +23,7 @@ function Diy() {
 					<p><em>Important: This DIY guide is still in BETA. There for sure are some things not perfectly clear yet. If you come across something: Get in touch! We gladly help out and update this guide accordingly. </em></p>
 				</Section>
 				<Section $contentWidth="breakout">
-					<h3><b>Step 1:</b> Things used for this Project</h3>
+					<h3 className="center"><b>Step 1:</b> Things used for this Project</h3>
 					<img src={requiredComponentsImage} alt="" width="100%"/>
           Overview image of all the things needed for this project
 				</Section>
@@ -63,7 +63,7 @@ function Diy() {
 					</ul>
 				</Section>
 				<Section $contentWidth="breakout">
-					<h3><b>Step 2:</b> Soldering the RC522</h3>
+					<h3 className="center"><b>Step 2:</b> Soldering the RC522</h3>
 					<img src={solderingImage} alt="" width="100%"/>
 					Soldering a pin header to the RC522 RFID sensor
 
@@ -79,7 +79,7 @@ function Diy() {
 
 				</Section>
 				<Section $contentWidth="breakout">
-					<h3><b>Step 3:</b> Wiring RFID sensor and RaspberryPi</h3>
+					<h3 className="center"><b>Step 3:</b> Wiring RFID sensor and RaspberryPi</h3>
 					<img src={wiringDiagramImage} alt="" width="100%"/>
 					Looks complicated but is actually quite simple: Wiring the RFID sensor and the RaspberryPi
 				</Section>
@@ -93,7 +93,7 @@ function Diy() {
 				</Section>
 
 				<Section $contentWidth="breakout">
-					<h3><b>Step 4:</b> The Box</h3>
+					<h3 className="center"><b>Step 4:</b> The Box</h3>
 					<img src={theBoxImage} alt="" width="100%"/>
 				</Section>
 				<Section $contentWidth="narrow-content">
@@ -101,7 +101,7 @@ function Diy() {
 					<p>We created some nice print out stencils for you. Just download the <a href="https://www.dropbox.com/s/bikcqazsculb38q/%20diy_kit_foamboard_template_004.pdf">PDF</a> and print them on A4 paper. This will help you to cut out all the parts needed for the casing out of  5mm foam board. No complicated measuring and marking required. The stencils also include detailed instructions on how to put everything together.</p>
 				</Section>
 				<Section $contentWidth="breakout">
-					<h3><b>Step 5:</b> Setting up the RaspberryPi</h3>
+					<h3 className="center"><b>Step 5:</b> Setting up the RaspberryPi</h3>
 					<img src={sdCardImage} alt="" width="100%"/>
 				</Section>
 				<Section $contentWidth="narrow-content">
