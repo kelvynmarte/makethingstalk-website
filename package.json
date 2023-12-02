@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://new.makethingstalk.io/",
+  "homepage": "https://www.makethingstalk.io/",
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build",
