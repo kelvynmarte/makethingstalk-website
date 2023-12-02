@@ -18,6 +18,8 @@ const HeaderContainer = styled.div`
 
   h3 {
     margin: 0;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 4rem);
   }
 `;
 
@@ -47,7 +49,7 @@ export function Datenschutz() {
 			<ScrollRestoration />
 			<ContentSectionWrapper className="small-margin small-gap">
 				<HeaderContainer>
-					<h3>Datenschutzerklärung</h3>
+					<h3>Datenschutz</h3>
 					<BackButton onClick={() => navigate(-1)}>
 						<svg xmlns="http://www.w3.org/2000/svg" id="mdi-close" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
 					</BackButton>
