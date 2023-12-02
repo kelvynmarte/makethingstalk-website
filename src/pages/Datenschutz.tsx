@@ -26,6 +26,15 @@ const BackButton = styled.div`
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+
+  svg {
+    fill: var(--text-color);
+    transition: fill 170ms ease-in-out;
+  }
+
+  &:hover svg {
+    fill: var(--link-hover-color);
+  }
 `;
 
 

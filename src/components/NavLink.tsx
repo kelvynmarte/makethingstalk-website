@@ -12,7 +12,7 @@ export const NavLink = styled(Link)`
     transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
 
   &:hover {
-    color: rgba(29, 29, 29, 0.4);
+    color: var(--link-hover-color);
     text-decoration: none;
   }
 `;
