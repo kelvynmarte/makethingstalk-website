@@ -5,7 +5,7 @@ const StyledSection = styled.section<{ $imageUrl?: string, $contentType?: string
   grid-column: ${(props) => props.$contentType ? props.$contentType : "content" };
   display: grid;
   align-items: center;
-  min-height: max(70svh, 30svw);
+  min-height: max(70svh, 36svw);
   grid-template-columns: inherit;
   ${(props) => props.$imageUrl ? `background: url('${props.$imageUrl}') center/cover no-repeat;` : ``} 
   color: white;
@@ -17,6 +17,7 @@ const TextOverlay = styled.div`
     display: flex;
     h1, h2, h3 {
         width: max(50%, 400px);
+        margin: 2rem 0;
     }
 `;
 
