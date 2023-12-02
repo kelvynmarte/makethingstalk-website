@@ -183,7 +183,7 @@ function Diy() {
 
 				</Section>
 				<Section $contentWidth="narrow-content">
-					<p>Wir würden uns freuen, mit dir ein wenig über Ideen und Möglichkeiten zu plaudern. Melde dich bei uns! &nbsp;<a href="info@makethingstalk.io﻿"><strong>info@makethingstalk.io﻿</strong></a></p>
+					<p>Wir würden uns freuen, mit dir ein wenig über Ideen und Möglichkeiten zu plaudern. Melde dich bei uns! &nbsp;<a href="info@makethingstalk.io﻿"><strong>info@makethingstalk.io</strong></a></p>
 				</Section>
 			</ContentSectionWrapper>
 			<Footer></Footer>

@@ -5,8 +5,7 @@ import './styles/main.css';
 
 import {
 	createHashRouter,
-	RouterProvider,
-	ScrollRestoration,
+	RouterProvider
 } from "react-router-dom";
 import Home from './pages/Home.tsx';
 import Diy from './pages/Diy.tsx';

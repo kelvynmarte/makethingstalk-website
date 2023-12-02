@@ -1,18 +1,8 @@
-import ImageSection from "../components/ImageSection";
-import Navbar from "../components/Navbar";
-import productImage from '../assets/home-cover.jpg';
-import configureImage from '../assets/home/configure.jpeg';
 import { Section } from "../components/Section";
 import { ContentSectionWrapper } from "../components/ContentSectionWrapper";
 import styled from "styled-components";
 import { useNavigate, ScrollRestoration } from "react-router-dom";
 
-const HeaderSpacer = styled.div`
-    display: grid;
-    margin-top: 2rem;
-    grid-column: full-width;
-    grid-template-columns: inherit;
-`;
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -25,12 +15,10 @@ const HeaderContainer = styled.div`
 
   padding: 1rem 0;
   border-bottom: 1px solid var(--text-color);
+
   h3 {
     margin: 0;
   }
-
-
-  
 `;
 
 const BackButton = styled.div`
