@@ -11,12 +11,14 @@ import { ContentSectionWrapper } from "../components/ContentSectionWrapper";
 import { Section } from "../components/Section";
 import { IFrame } from "../components/IFrame";
 import Footer from "../components/Footer";
+import { ScrollRestoration } from "react-router-dom";
 
 function Diy() {
 
 
 	return (
 		<>
+			<ScrollRestoration />
 			<Navbar/>
 			<ImageSection imageUrl={diyCoverImage} text=""></ImageSection>
 			<ContentSectionWrapper>
@@ -176,9 +178,9 @@ function Diy() {
 					</div>
 				</Section>
 				<Section $contentWidth="content">
-					<p>
-						<h3 className="margin-right-25">Du bist daran interessiert eine <b>make things talk</b> Box im Rahmen einer Ausstellung einzusetzen?</h3>
-					</p>
+
+					<h3 className="margin-right-25">Du bist daran interessiert eine <b>make things talk</b> Box im Rahmen einer Ausstellung einzusetzen?</h3>
+
 				</Section>
 				<Section $contentWidth="narrow-content">
 					<p>Wir würden uns freuen, mit dir ein wenig über Ideen und Möglichkeiten zu plaudern. Melde dich bei uns! &nbsp;<a href="info@makethingstalk.io﻿"><strong>info@makethingstalk.io﻿</strong></a></p>

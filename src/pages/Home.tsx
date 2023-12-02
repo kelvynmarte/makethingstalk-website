@@ -6,11 +6,13 @@ import { Section } from "../components/Section";
 import { ContentSectionWrapper } from "../components/ContentSectionWrapper";
 import { IFrame } from "../components/IFrame";
 import Footer from "../components/Footer";
+import { ScrollRestoration } from "react-router-dom";
 function Home() {
 
 
 	return (
 		<>
+			<ScrollRestoration />
 			<Navbar/>
 			<ImageSection imageUrl={productImage} text="Digitale Geschichten erzählen mit RFID-Technologie – jenseits von Tablets, Terminals und Touchscreens."></ImageSection>
 			<ContentSectionWrapper>

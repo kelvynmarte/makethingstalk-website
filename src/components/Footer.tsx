@@ -56,7 +56,7 @@ const Footer = () => {
 				<img src={cvdLogoImage} width="120" />
 			</a>
 
-			<NavLink to="/datenschutz">
+			<NavLink to="/datenschutz" preventScrollReset={false}>
                 DATENSCHUTZ
 			</NavLink>
 		</FooterContainer>

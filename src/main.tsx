@@ -6,9 +6,11 @@ import './styles/main.css';
 import {
 	createHashRouter,
 	RouterProvider,
+	ScrollRestoration,
 } from "react-router-dom";
 import Home from './pages/Home.tsx';
 import Diy from './pages/Diy.tsx';
+import { Datenschutz } from './pages/Datenschutz.tsx';
 
 
 const router = createHashRouter([
@@ -19,6 +21,10 @@ const router = createHashRouter([
 	{
 		path: "/diy",
 		element: <Diy />
+	},
+	{
+		path: "/datenschutz",
+		element: <Datenschutz />
 	},
 ]);
 
