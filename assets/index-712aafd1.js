@@ -72,7 +72,7 @@ Error generating stack: `+o.message+`
   grid-column: ${e=>e.$contentType?e.$contentType:"content"};
   display: grid;
   align-items: center;
-  min-height: max(70svh, 30svw);
+  min-height: max(70svh, 36svw);
   grid-template-columns: inherit;
   ${e=>e.$imageUrl?`background: url('${e.$imageUrl}') center/cover no-repeat;`:""} 
   color: white;
@@ -81,6 +81,7 @@ Error generating stack: `+o.message+`
     display: flex;
     h1, h2, h3 {
         width: max(50%, 400px);
+        margin: 2rem 0;
     }
 `,ys=({imageUrl:e,text:t})=>u.jsx(M0,{$imageUrl:e,$contentType:"full-width",children:u.jsx(O0,{children:u.jsx("h2",{children:t})})}),F0="/assets/mtt-logo-902e91d4.svg",ws=Be(Ry)`
     font-family: var(--secondary-font-family);
