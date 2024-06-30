@@ -42,7 +42,7 @@ function Home() {
 					<h3 className="margin-right-25">Du bist daran interessiert eine <b>make things talk Box</b> im Rahmen einer Ausstellung einzusetzen?</h3>
 				</Section>
 				<Section $contentWidth="narrow-content">
-					<p>Wir würden uns freuen, mit dir ein wenig über Ideen und Möglichkeiten zu plaudern. Melde dich bei uns!<br />  <a href="mailto:info@makethingstalk.io">info@makethingstalk.io</a></p>
+					<p>Wir würden uns freuen, mit dir ein wenig über Ideen und Möglichkeiten zu plaudern. Melde dich bei uns!<br />  <a href="mailto:info@makethingstalk.io">info@makethingstalk.io</a>...</p>
 				</Section>
 			</ContentSectionWrapper>
 			<Footer></Footer>
